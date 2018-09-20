@@ -1,0 +1,25 @@
+{
+  "name": "simple-node-app",
+  "version": "1.0.0",
+  "description": "a simple nodejs docker test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app:* node app.js",
+    "dev": "DEBUG=app:* nodemon app.js"
+  },
+  "keywords": [
+    "test",
+    "docker",
+    "nodejs"
+  ],
+  "author": "Taarik Siers",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.0.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

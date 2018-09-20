@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  node-app:
+    image: "taarik/simple-node-app"
+    command: npm run dev
+    ports:
+      - "9100:9100"
+
+  flask-app:
+    image: "taarik/my-simple-webapp"    
+    ports:
+      - "9101:5000"
+
+  flask-app-another:
+    image: "taarik/simple-py-app"
+    ports:
+      - "9102:5000"
+
+  redis:
+    image: "redis:alpine"
